@@ -134,7 +134,7 @@ def task(username, password, address, position, wxkey):
             except Exception as es:
                 # print("正在重试...")
                 output_data += f'\n\n\t- {es}\n\t'
-                if a > 10:
+                if a > 5:
                     output_data += '\n\n- 超过尝试次数，请自行打卡😫...'
                     break
             print(f"第{a}次打卡失败🙃...")
